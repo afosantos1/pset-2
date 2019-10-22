@@ -12,4 +12,4 @@ let perimeter = (2 * length_cm) + (2 * width_cm);
 perimeter = perimeter.toFixed(2);
 perimeter = perimeter.toLocaleString();
 
-console.log("\nA(n) " + width_in + "-by-" + length_in + "-inch sheet of paper has perimeter of " + perimeter + " centimeter(s).\n" );
+console.log("\nA(n) " + width_in + "-by-" + length_in + "-inch sheet of paper has a perimeter of " + perimeter + " centimeter(s).\n" );
