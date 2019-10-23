@@ -6,7 +6,7 @@ const TEST_WEIGHT = 0.5;
 const NUMBER_OF_ASSIGNMENTS = 3;
 
 //user's homework grades
-let hwGrade1 = Number(readlineSync.question("\nEnter three homework grades.\n"));
+let hwGradeOne = Number(readlineSync.question("\nEnter three homework grades.\n"));
 let hwGradeTwo = Number(readlineSync.question(""));
 let hwGradeThree = Number(readlineSync.question(""));
 
