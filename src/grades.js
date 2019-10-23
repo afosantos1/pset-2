@@ -6,27 +6,27 @@ const TEST_WEIGHT = 0.5;
 const NUMBER_OF_ASSIGNMENTS = 3;
 
 //user's homework grades
-let hwGradeOne = Number(readlineSync.question("\nEnter three homework grades.\n"));
-let hwGradeTwo = Number(readlineSync.question(""));
-let hwGradeThree = Number(readlineSync.question(""));
+let GradehwOne = Number(readlineSync.question("\nEnter three homework grades.\n"));
+let GradehwTwo = Number(readlineSync.question(""));
+let GradehwThree = Number(readlineSync.question(""));
 
 //user's quiz grades
-let quizGradeOne = Number(readlineSync.question("\nEnter three quiz grades.\n"));
-let quizGradeTwo = Number(readlineSync.question(""));
-let quizGradeThree = Number(readlineSync.question(""));
+let GradequizOne = Number(readlineSync.question("\nEnter three quiz grades.\n"));
+let GradequizTwo = Number(readlineSync.question(""));
+let GradequizThree = Number(readlineSync.question(""));
 
 //user's test grades
-let testGradeOne = Number(readlineSync.question("\nEnter three test grades.\n"));
-let testGradeTwo = Number(readlineSync.question(""));
-let testGradeThree = Number(readlineSync.question(""));
+let GradetestOne = Number(readlineSync.question("\nEnter three test grades.\n"));
+let GradetestTwo = Number(readlineSync.question(""));
+let GradetestThree = Number(readlineSync.question(""));
 
 //weigth calculations
-let finalHwGrade = ((hwGradeOne + hwGradeTwo + hwGradeThree) / NUMBER_OF_ASSIGNMENTS) * HOMEWORK_WEIGHT;
-let finalQuizGrade = ((quizGradeOne + quizGradeTwo + quizGradeThree) / NUMBER_OF_ASSIGNMENTS) * QUIZ_WEIGHT;
-let finalTestGrade = ((testGradeOne + testGradeTwo + testGradeThree) / NUMBER_OF_ASSIGNMENTS) * TEST_WEIGHT;
+let HwfinalGrade = ((GradehwOne + GradehwTwo + GradehwThree) / NUMBER_OF_ASSIGNMENTS) * HOMEWORK_WEIGHT;
+let QuizfinalGrade = ((GradequizOne + GradequizTwo + GradequizThree) / NUMBER_OF_ASSIGNMENTS) * QUIZ_WEIGHT;
+let TestfinalGrade = ((GradetestOne + GradetestTwo + GradetestThree) / NUMBER_OF_ASSIGNMENTS) * TEST_WEIGHT;
 
 //marking period grade calculation
-let markingPeriodGrade = (finalHwGrade + finalQuizGrade + finalTestGrade);
+let markingPeriodGrade = (HwfinalGrade + QuizfinalGrade + TestfinalGrade);
 markingPeriodGrade = markingPeriodGrade.toFixed(2);
 
 
