@@ -1,3 +1,4 @@
+
 const readlineSync = require("readline-sync");
 
 const PRETAX = 0.07;
@@ -12,11 +13,8 @@ let userAnnualSalary = Number(readlineSync.question("\nAnnual Salary: "));
 //let userPeriodicSalary = userAnnualSalary / PAY_PERIODS_PER_YEAR;
 
 let preTaxSalary = userAnnualSalary - (userAnnualSalary * PRETAX);
-console.log(preTaxSalary);
 let totalDeductionPercentage = FEDERAL_income_tax + STATE_income_tax + SOCIAL_security_tax + MEDICARE_tax;
-console.log(totalDeductionPercentage);
 takeHomePay = (preTaxSalary - (preTaxSalary * totalDeductionPercentage)) / PAY_periods_per_year;
-console.log(takeHomePay);
 takeHomePay = takeHomePay.toLocaleString("en", { style: "currency", currency: "USD" });
 
 
