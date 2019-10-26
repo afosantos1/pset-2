@@ -2,7 +2,6 @@
 const length = 48;
 const width = 24;
 const diameter = 6;
-//l*w - pir^2
 
 let BoardArea = length * width;
 let radius = diameter / 2;
