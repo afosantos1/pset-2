@@ -10,7 +10,7 @@ const PAY_periods_per_year = 24;
 
 
 let userAnnualSalary = Number(readlineSync.question("\nAnnual Salary: "));
-//let userPeriodicSalary = userAnnualSalary / PAY_PERIODS_PER_YEAR;
+
 
 let preTaxSalary = userAnnualSalary - (userAnnualSalary * PRETAX);
 let totalDeductionPercentage = FEDERAL_income_tax + STATE_income_tax + SOCIAL_security_tax + MEDICARE_tax;
